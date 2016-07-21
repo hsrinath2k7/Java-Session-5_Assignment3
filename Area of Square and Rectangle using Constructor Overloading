@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class AreaSquareRectangle {
+	
+	
+	public AreaSquareRectangle(double h)
+	{
+		
+		double square = h * h;
+		
+		System.out.println("Area of Square: " + square);
+	}
+	
+	
+	public AreaSquareRectangle(double w,double h)
+	{
+		
+		double rectangle = w * h;
+		
+		System.out.println("Area of Rectangle: " + rectangle);
+	}
+	
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double w,h;
+		
+		System.out.println("Enter Width and Height to calcuate Area of Square and Rectangle");
+		
+		Scanner read = new Scanner(System.in);
+		
+		System.out.print("Enter Width: ");
+		
+		w = read.nextDouble();
+		
+		System.out.print("Enter Height: ");
+		
+		h = read.nextDouble();
+		
+		
+	AreaSquareRectangle areaSq = new AreaSquareRectangle(h);
+	
+	AreaSquareRectangle areaRc = new AreaSquareRectangle(w, h);
+	
+	
+	}
+	
+	
+
+}
+
+
+/* Ouput
+Enter Width and Height to calcuate Area of Square and Rectangle
+Enter Width: 5
+Enter Height: 10
+Area of Square: 100.0
+Area of Rectangle: 50.0
+
+
+*/
